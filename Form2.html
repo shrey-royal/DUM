@@ -6,7 +6,7 @@
     <title>Form Tag</title>
 </head>
 <body>
-    <fieldset style="background-color: tomato;">
+    <fieldset>
         <legend>Registration Form</legend>
         <form>
             <label for="address">TextArea: </label>
@@ -53,6 +53,19 @@
 
             <label for="meter">Meter: </label>
             <meter value="2" min="0" max="10">2 out of 10</meter>
+            <br><br>
+
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" value="Male" checked>Male
+            <input type="radio" name="gender" value="Female">Female
+            <input type="radio" name="gender" value="Prefer not to say">Prefer Not To Say
+            <br><br>
+
+            <label for="hobby">Hobby: </label>
+            <input type="checkbox" name="hobby" value="sleeping" checked>Sleeping
+            <input type="checkbox" name="hobby" value="eating">Eating
+            <input type="checkbox" name="hobby" value="playing">Playing
+            <br><br>
     
             <br><br>
             <input type="submit" value="Submit">
