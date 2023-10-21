@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        text: <input type="text" name="naam" placeholder="enter your name here">
+        <br><br>
+        password: <input type="password" name="pass" placeholder="enter your password here">
+        <br><br>
+        email: <input type="email" name="email" placeholder="enter your email here">
+        <br><br>
+        number: <input type="number" name="num" placeholder="enter your number here">
+        <br><br>
+        date: <input type="date" name="date">
+        <br><br>
+        month: <input type="month" name="month">
+        <br><br>
+        week: <input type="week" name="week">
+        <br><br>
+        time: <input type="time" name="time">
+        <br></br>
+        datetime-local: <input type="datetime-local" name="datetime-local">
+        <br><br>
+        color: <input type="color" name="color">
+        <br><br>
+        range: <input type="range" name="range" min="0" max="10" value="9">
+        <br><br>
+        search: <input type="search" name="search">
+        <br><br>
+        tel: <input type="tel" name="tel">
+        <br><br>
+        url: <input type="url" name="url">
+        <br><br>
+        <input type="submit" value="Register"> | <input type="reset" value="Clear Form">
+    </form>
+</body>
+</html>
+
+<!--
+Form tag: 
+
+> Form tag is used to create an HTML form for user input.
+> form attrs:
+    1. action: Specifies where to send the form-data when a form is submitted. (URL)
+    2. method: Specifies the HTTP method to use when sending form-data. (GET, POST)
+    3. target: Specifies where to display the response after submitting the form. (blank, self, parent, top)
+    4. autocomplete: Specifies whether a form should have autocomplete on or off. (on, off)
+    5. enctype: Specifies how the form-data should be encoded when submitting it to the server. (application/x-www-form-urlencoded, multipart/form-data, text/plain)
+    6. name: Specifies the name of a form.
+    7. novalidate: Specifies that the form should not be validated when submitted.
+    8. accept-charset: Specifies the character encodings that are to be used for the form submission.
+    9. accept: Specifies the types of files that the server accepts (only for type="file").
+
+> form elements:
+    1. input: Defines an input control. (text, password, submit, reset, radio, checkbox, button, file, hidden, image, email, url, tel, number, range, date, month, week, time, datetime-local, color, search)
+    2. textarea: Defines a multi-line input control (text area).
+    3. button: Defines a clickable button.
+    4. select: Defines a drop-down list.
+    5. optgroup: Defines a group of related options in a drop-down list.
+    6. option: Defines an option in a drop-down list.
+    7. label: Defines a label for an <input> element.
+    8. fieldset: Groups related elements in a form.
+    9. legend: Defines a caption for a <fieldset> element.
+    10. datalist: Specifies a list of pre-defined options for input controls.
+    11. output: Defines the result of a calculation.
+    12. progress: Represents the progress of a task.
+    13. meter: Defines a scalar measurement within a known range (a gauge).
+    14. keygen: Defines a key-pair generator field (for forms).
+
+
+1. Input Element:
+> attrs:
+        1. name: Specifies the name of an <input> element.
+        2. type: Specifies the type <input> element to display.
+        3. value: Specifies the value of an <input> element.
+        4. placeholder: Specifies a short hint that describes the expected value of an <input> element.
+        5. required: Specifies that an input field must be filled out before submitting the form.
+        6. disabled: Specifies that an input element should be disabled.
+        7. readonly: Specifies that an input field is read-only (cannot be changed).
+        8. size: Specifies the width (in characters) of an <input> element.
+        9. maxlength: Specifies the maximum number of characters allowed in an <input> element.
+        10. minlength: Specifies the minimum number of characters allowed in an <input> element.
+        11. autocomplete: Specifies whether an <input> element should have autocomplete enabled.
+ -->

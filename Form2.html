@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+</head>
+<body>
+    <fieldset style="background-color: tomato;">
+        <legend>Registration Form</legend>
+        <form>
+            <label for="address">TextArea: </label>
+            <textarea name="address" cols="30" rows="10"></textarea>
+            <br><br>
+            <label for="btn">Button: </label>
+            <button name="btn" type="button">Standard Button</button> | <button disabled="disabled">Disabled Button</button> | <button type="reset">Reset Button</button> | <button type="submit">Submit Button</button>
+            <br><br>
+            <label for="cars">Select: </label>
+            <select name="cars">
+                    <option value="">Select any Car</option>
+                    <optgroup label="JDM Cars">
+                        <option value="supra">Toyota Supra</option>
+                        <option value="rx7">Mazda Rx-7</option>
+                        <option value="gtr">Nissan GTR</option>
+                        <option value="skyline">Nissan Skyline</option>
+                        <option value="civic">Honda Civic Type R (Twin Turbo)</option>
+                    </optgroup>
+                    <optgroup label="German Cars">
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </optgroup>
+                </select>
+            <br><br>
+            <label for="car">DataList: </label>
+            <datalist id="car">
+                <option value="Toyota">
+                <option value="Mazda">
+                <option value="Nissan">
+                <option value="Honda">
+                <option value="Mercedes">
+                <option value="Audi">
+            </datalist>
+            <input type="text" list="car" name="car">
+            <br><br>
+
+            <label for="num1">Output: </label>
+            <output name="num1" for="num1 num2">12</output>
+            <br><br>
+
+            <label for="abc">Progress: </label>
+            <progress name="abc" value="70" max="100"></progress>
+            <br><br>
+
+            <label for="meter">Meter: </label>
+            <meter value="2" min="0" max="10">2 out of 10</meter>
+    
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </fieldset>
+</body>
+</html>
+
+<!-- 
+> form elements:
+    1. input: Defines an input control. (text, password, submit, reset, radio, checkbox, button, file, hidden, image, email, url, tel, number, range, date, month, week, time, datetime-local, color, search)
+    2. textarea: Defines a multi-line input control (text area).
+    3. button: Defines a clickable button.
+    4. select: Defines a drop-down list.
+    5. optgroup: Defines a group of related options in a drop-down list.
+    6. option: Defines an option in a drop-down list.
+    7. label: Defines a label for an <input> element.
+    8. fieldset: Groups related elements in a form.
+    9. legend: Defines a caption for a <fieldset> element.
+    10. datalist: Specifies a list of pre-defined options for input controls.
+    11. output: Defines the result of a calculation.
+    12. progress: Represents the progress of a task.
+    13. meter: Defines a scalar measurement within a known range (a gauge).
+
+
+
+ -->
