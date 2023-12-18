@@ -1,0 +1,116 @@
+<!-- 
+CSS - Cascading Style Sheet (.css)
+
+What is CSS?
+> CSS stands for Cascading Style Sheet, used for styling/designing HTML elements.
+> CSS is language that describe the style of an HTML document.
+> 3 ways to insert css:
+    1. Inline
+    2. Internal
+    3. External
+
+1. Inline CSS: (element level)
+    > Inline CSS is used to style a single element.
+    > Inline CSS is written inside the HTML element, using style attribute.
+    > syntax: <h1 style="color: salmonred;">This is a Red Heading</h1>
+
+2. Internal CSS: (document level)
+    > It is used to style a single page.
+    > It is written inside <style> element, inside the <head> section of an HTML page.
+    > syntax:
+        <head>    
+            <style>
+                body {backgroud-color: powderblue;}
+                h1 {color: blue;}
+                p {font-size: 45px;}
+            </style>
+        </head>
+
+3. External CSS: (Multi Document level)
+    > it is used to style multiple pages.
+    > it is written in a seperate file with .css extension
+    > it is linked to HTML page using <link> tag.
+    > syntax:
+        <head>
+            <link rel="stylesheet" href="style.css">
+        </head>
+
+Priority: Inline > Internal > External
+
+
+
+CSS Selectors: (used to select HTML elements that we want to style)
+    1. Element Selector
+    2. #id Selector
+    3. .class Selector
+    4. Attribute Selector
+    5. Descendent Selector
+    6. Child Selector
+    7. Adjancent and General Sibling Selector
+    8. Pseudo Classes
+    9. Pseudo Elements
+    10. nth-of-type and nth-child Selector
+    11. The Universal Selector (*)
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-1</title>
+    <link rel="stylesheet" href="../CSS/Intro.css">
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(50, 50, 50);
+            color: white;
+        }
+
+        /* Element Selector */
+        /* h1, p {
+            text-align: center;
+            color: blue;
+        } */
+
+        /* ID Selector */
+        /* #two {
+            color: lightseagreen;
+        } */
+
+        /* Class Selector */
+        /* .three {
+            color: lightcoral;
+        } */
+
+        /* .big-button {
+            font-size: 30px;
+        } */
+
+        /* Attribute Selector */
+        h2[rel="friend"] {
+            color: greenyellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 style="color: salmon;">Introduction to CSS</h1>
+    <p style="color: orangered;">This is a Paragraph</p>
+    <p>This is Paragraph tag 2</p>
+    <p id="two">This is a paragraph tag</p>
+    <p class="three">This is a paragraph tag</p>
+    <p class="three">This is a paragraph tag</p>
+    <p>This is a paragraph tag</p>
+    <p>This is a paragraph tag</p>
+
+    <button type="button" class="big-button">This is a button</button>
+
+    <h2 id="title" class="magic" rel="friend">
+        Friend
+    </h2>
+</body>
+</html>
