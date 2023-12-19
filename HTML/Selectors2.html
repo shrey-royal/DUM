@@ -1,0 +1,81 @@
+<!-- 
+    8. Pseudo Classes
+    9. Pseudo Elements
+    10. nth-of-type and nth-child Selector
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(50, 50, 50);
+            color: white;
+        }
+
+        a:visited {
+            color: greenyellow;
+        }
+
+        /* a:link {
+            color: lightcoral;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:active {
+            color: lightseagreen;
+        }
+
+        a:hover {
+            background-color: greenyellow;
+        } */
+
+        /* a.highlight:hover {
+            color: white;
+            font-size: 25px;
+        } */
+
+        /* .container {
+            height: 100px;
+            width: auto;
+            text-align: center;
+        }
+
+        div:hover {
+            background-color: lightsalmon;
+        } */
+
+        p {
+            display: none;
+            background-color: darkorchid;
+        }
+
+        div:hover p {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Anchor Tag Pseudo Classes -->
+    <!-- <a class="highlight" href="https://www.youtube.com/" target="_blank">This is a link</a><br>
+    <a href="https://www.youtube.com/" target="_blank">This is a link</a> -->
+
+    <!-- <div class="container">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum ad alias nihil at sit hic architecto tempora, temporibus totam fugit.
+    </div> -->
+
+    <div> Hover me
+        <p>Hidden text</p>
+    </div>
+</body>
+</html>
