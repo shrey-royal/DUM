@@ -14,11 +14,27 @@
 
             /* background-image: linear-gradient(direction, colo1, ..., colorn); */
             /* background-image: linear-gradient(to right, #8A2387, #E94057, #F27121); */
-            background-image: repeating-linear-gradient(45deg, #8A2387 33%, #E94057 33%, #F27121 50%);
+            /* background-image: repeating-linear-gradient(45deg, #8A2387 33%, #E94057 33%, #F27121 50%); */
             /* background-image: linear-gradient(360deg, violet, indigo, blue, green, yellow, orange, red); */
+            
+            /* background-image: radial-gradient(shape size at position, start-color, ..., n-colors); */
+            /* background-image: radial-gradient(circle, #C6FFDD 5%, #FBD786 50%, #f7797d); */
+            /* background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black); */
+            /* background-image: repeating-radial-gradient(red, yellow 10%, green 15%); */
+        }
+
+        .grad {
+            height: 400px;
+            width: 400px;
+            /* background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg, blue 360deg); */
+            
+            /* background-image: repeating-conic-gradient(red 10%, yellow 20%); */
+            border-radius: 50%;
+            background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
         }
     </style>
 </head>
 <body>
+    <div class="grad"></div>
 </body>
 </html>
