@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Task</title>
+    <style>
+        table {
+            border-spacing: 2em;
+            /* margin: 1rem auto; */
+        }
+
+        td {
+            border: 1px solid red;
+            border-radius: 6px;
+            /* padding: 1rem 1.2rem; */
+        }
+
+        #border-seperate:checked ~ table {
+            border-collapse: separate;
+        }
+
+        #border-collapse:checked ~ table {
+            border-collapse: collapse;
+        }
+
+    </style>
+</head>
+<body>
+    <label for="border-seperate">seperate</label>
+    <input type="radio" name="border-behaviour" id="border-seperate" checked>
+    <label for="border-collapse">collapse</label>
+    <input type="radio" name="border-behaviour" id="border-collapse">
+
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
